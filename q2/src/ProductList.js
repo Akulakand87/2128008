@@ -12,7 +12,7 @@ const ProductList = () => {
       try {
         setLoading(true);
         const response = await axios.get(
-          'http://20.244.56.144/test/companies/:companyname/categories/:categoryname/products',
+          'http://20.244.56.144/test/companies/:companyname/categories/:categoryname/products?top=n&minPrice=p&maxPrice=q',
           {
             params: {
               top: 10,
